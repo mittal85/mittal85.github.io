@@ -76,7 +76,7 @@
         $("#submitButton").click(function () {
             tableau.connectionData = $("#submitSymbol").val();
   
-            tableau.connectionName = "AV'+tableau.connectionData+'Feed";
+            tableau.connectionName = 'AV'+tableau.connectionData+'Feed';
             tableau.submit();
         });
     });
