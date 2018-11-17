@@ -13,7 +13,7 @@
             alias: "High",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "timestamp",
+            id: "date",
             alias: "Date",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -50,7 +50,7 @@
             data: {},
             success: function(data) {
                 const allRows = []
-                const timeSeries = data['Time Series (Intraday)']
+                const timeSeries = data['Intraday (5min)']
                 const keys = Object.keys(timeSeries)
                 for (var i = 0 ; i < keys.length ; i++) {
                     const key = keys[i]
