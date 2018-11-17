@@ -50,7 +50,7 @@
             data: {},
             success: function(data) {
                 const allRows = []
-                const timeSeries = data['Time Series (INTRADAY)']
+                const timeSeries = data['Time Series (Intraday 5 min)']
                 const keys = Object.keys(timeSeries)
                 for (var i = 0 ; i < keys.length ; i++) {
                     const key = keys[i]
