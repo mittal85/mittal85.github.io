@@ -41,7 +41,7 @@
 
     myConnector.getData = function (table, doneCallback) {
         
-        const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+tableau.connectionData+'&interval=5min&apikey=QYOWP5SXIHB6BV3X'
+        const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+tableau.connectionData+'&interval=1min&apikey=QYOWP5SXIHB6BV3X'
         //const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=QYOWP5SXIHB6BV3X'
         //https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+tableau.connectionData+'&interval=5min&apikey=QYOWP5SXIHB6BV3X
         $.ajax({
